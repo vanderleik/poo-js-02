@@ -8,3 +8,9 @@
  <li>let: escopo de bloco (variável local),</li>
  <li>const: escopo de bloco.</li>
 </ul>
+<p>
+<a href="tipos-dados.js">tipos-dados.js</a>
+ <ul>
+ <li>Number,</li>
+ <li>String</li> 
+</ul>
