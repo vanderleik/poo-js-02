@@ -89,4 +89,62 @@ console.log(str1.trim());
 console.log(str1.trimStart());
 console.log(str1.trimEnd());
 
+//Math
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
+console.log(Math.E);
+console.log(Math.LN2);
+console.log(Math.LN10);
+console.log(Math.LOG2E);
+console.log(Math.LOG10E);
+console.log(Math.PI);
+
+const numero = 1.2354;
+const numeroNegativo = -1.2354;
+const nummero9 = 9;
+const numero3 = 3;
+const array = [10, 15, 16, 21, 38];
+
+console.log(Math.abs(numero));
+console.log(Math.abs(numeroNegativo));
+console.log(Math.exp(1));
+console.log(Math.round(numero));
+console.log(Math.sqrt(nummero9));
+console.log(Math.max(... array));
+console.log(Math.min(...array));
+
+
+function aleatorio(min, max) {
+    const num = Math.floor(Math.random() * (max - min + 1)) + 1;
+    return num;
+};
+
+aleatorio(1, 10);
+
+console.log(Math.random());
+
+//Date
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
+
+const hoje1 = new Date();
+console.log(hoje1);
+const hoje2 = new Date("2023-04-14T13:58:00");
+console.log(hoje2);
+const data1 = new Date(2023, 3, 14);//O mês tem índice zero!!!
+console.log(data1);
+console.log(new Date(null));
+
+console.log(hoje1.getFullYear());
+console.log(hoje1.getDate());
+console.log(hoje1.getMonth());
+console.log(hoje1.getTime());
+console.log(hoje1.toLocaleDateString());
+
+const date = new Date();
+const [month, day, year] = [
+    date.getMonth(),
+    date.getDate(),
+    date.getFullYear(),
+];
+
+console.log(date);
