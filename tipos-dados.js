@@ -215,4 +215,29 @@ function item(i) {
 
 console.log(arr1.findIndex(item));
 
-[**** continua ****]
+let managers = ['Creed Bratton', 'Deangelo Vickers', 'Robert California', 
+            'Nellie Bertram', 'Jim Halpert', 'Andy Bernard', 'Michael Scott',
+            'Dwight Schrute'];
+
+managers.forEach(function(item, index) {
+    console.log("--> " + `${item} na posicao ${index}`);
+});
+
+managers.forEach(function(item, index) {
+    console.log("--> Posição: " + `${index} \nGerente:  ${item}\n--------------------------------`);
+});
+
+console.log();
+console.log(managers.sort());
+console.log();
+console.log(managers.reverse());
+
+let a = [7,8,4,9,1,4,5];
+console.log(
+            a.sort(
+                            function(item1, item2) {
+                            if (item1 > item2) return -1;
+                            if (item1 < item2) return 1;
+                            return 0;
+                            })
+            );
