@@ -15,4 +15,5 @@
  <li>String</li> 
  <li>Math</li> 
  <li>Date</li> 
+ <li>Array</li> 
 </ul>

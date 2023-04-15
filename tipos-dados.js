@@ -148,3 +148,71 @@ const [month, day, year] = [
 ];
 
 console.log(date);
+
+//Array
+//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
+let personagens = ["Emily Sweeney", "Leslie Winkle", "Bernadette Rostenkowski", "Penny Hofstadter", 
+                    "Amy Fowler", "Raj Koothrappali", "Howard Wolowitz", "Leonard Hofstadter", 
+                    "Sheldon Cooper"];
+console.log(personagens);
+console.log(personagens[4]);
+console.log(personagens.length);
+let personagem123 = [personagens[1], personagens[2], personagens[3]];
+console.log(personagem123);
+personagem123[0] = "Novo Personagem";
+console.log(personagem123);
+personagem123[4] = "Personagem Quatro";
+console.log(personagem123);
+personagem123.push("Última posição disponível");
+console.log(personagem123);
+
+for (let person in personagem123) {
+    console.log(" --> " + person);
+};
+personagem123[8] = "Personagem na Posição 8";
+console.log("**********************************************");
+
+for (let person in personagem123) {
+    console.log(" --> " + person)
+};
+
+console.log("**********************************************");
+
+for (let i = 0; i < personagem123.length; i++) {
+    console.log("--> " + i + " " + personagem123[i]);
+}
+
+console.log("**********************************************");
+console.log(personagens.toString());
+console.log(personagens.join(", "));
+
+let x = [1, 2, 3];
+let y = [4, 5, 6];
+
+let a = x.concat(y);
+console.log(a);
+let b = a.concat(x,y);
+console.log(b.join(" - "));
+
+let c = a.slice();//copia o array
+console.log(c.join(" - "));
+let d = a.slice(2);//copia os dados a partir da posição 2 (inclusive)
+console.log(d.join(" - "));
+let e = a.slice(2, 4);//copia o array. start (inclusive), end (exclusive)
+console.log(e.join(" - "));
+console.log("**********************************************");
+console.log(personagens.indexOf("Penny Hofstadter"));
+console.log(personagens.indexOf("Leslie Winkle", "Penny Hofstadter"));
+console.log(personagens.lastIndexOf("Leslie Winkle"));
+console.log(personagens.includes("Sheldon Cooper"));
+console.log(personagens.includes("Deve retornar false"));
+
+console.log("**********************************************");
+let arr1 = [0,1,2,3,4,5,6,7,8,9];
+function item(i) {
+    return i >= 2;
+};
+
+console.log(arr1.findIndex(item));
+
+[**** continua ****]
